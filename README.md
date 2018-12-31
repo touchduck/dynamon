@@ -1,3 +1,7 @@
+# Latest news
+update version 1.0.2
+- bugfix
+
 # What is dynamon
 dynamon is GUI Development tools of Amazon DynamoDB
 
@@ -7,8 +11,8 @@ free
 ![Screenshot](Screenshots/dynamon.png)
 
 # Downloads
-Version 1.0.0
-https://github.com/touchduck/dynamon/raw/master/Release/1.0.0/Dynamon.zip  
+Version 1.0.2
+https://github.com/touchduck/dynamon/raw/master/Release/1.0.2/Dynamon.zip  
 
 # System requirements  
 Mac OSX 10.10 and higher.
