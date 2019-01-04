@@ -1,5 +1,5 @@
 # Latest news
-update version 1.0.3
+update version 1.0.4
 - bugfix
 
 # What is dynamon
@@ -11,7 +11,7 @@ free
 ![Screenshot](Screenshots/dynamon.png)
 
 # Downloads
-https://github.com/touchduck/dynamon/raw/master/Release/1.0.3/Dynamon.zip  
+https://github.com/touchduck/dynamon/raw/master/Release/1.0.4/Dynamon.zip  
 
 # System requirements  
 Mac OSX 10.10 and higher.
