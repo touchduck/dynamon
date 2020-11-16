@@ -60,13 +60,12 @@ When you run it again, Keep width and order of columns
 
 # How to compile
 
-AWS SDK for C++ - GitHub
 https://github.com/aws/aws-sdk-cpp.git
+git clone aws-sdk-cpp
 
 compile macOS static library
-```
 brew install cmake
 cmake -DCUSTOM_MEMORY_MANAGEMENT=1 -DSTATIC_LINKING=1 -DBUILD_ONLY="core;s3;dynamodb"
 make install
-```
 and build to xcode
+
