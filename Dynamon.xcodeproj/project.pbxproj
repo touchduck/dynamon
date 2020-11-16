@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		051A86671DA8FB0F0024E8BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 051A86661DA8FB0F0024E8BF /* Assets.xcassets */; };
+		051A866A1DA8FB0F0024E8BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 051A86681DA8FB0F0024E8BF /* Main.storyboard */; };
+		051A868F1DA8FBC30024E8BF /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051A86721DA8FBC30024E8BF /* AuthViewController.swift */; };
+		051A86901DA8FBC30024E8BF /* CDynamo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 051A86741DA8FBC30024E8BF /* CDynamo.mm */; };
+		051A86911DA8FBC30024E8BF /* CDynamoClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 051A86761DA8FBC30024E8BF /* CDynamoClient.mm */; };
+		051A86931DA8FBC30024E8BF /* CDynamoGlobalSecondaryIndex.mm in Sources */ = {isa = PBXBuildFile; fileRef = 051A867A1DA8FBC30024E8BF /* CDynamoGlobalSecondaryIndex.mm */; };
+		051A86941DA8FBC30024E8BF /* CDynamoHeader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 051A867C1DA8FBC30024E8BF /* CDynamoHeader.mm */; };
+		051A86951DA8FBC30024E8BF /* CDynamoItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 051A867E1DA8FBC30024E8BF /* CDynamoItem.mm */; };
+		051A86961DA8FBC30024E8BF /* CDynamoKeySchema.mm in Sources */ = {isa = PBXBuildFile; fileRef = 051A86801DA8FBC30024E8BF /* CDynamoKeySchema.mm */; };
+		051A86971DA8FBC30024E8BF /* CDynamoLocalSecondaryIndex.mm in Sources */ = {isa = PBXBuildFile; fileRef = 051A86821DA8FBC30024E8BF /* CDynamoLocalSecondaryIndex.mm */; };
+		051A86981DA8FBC30024E8BF /* CDynamoTable.mm in Sources */ = {isa = PBXBuildFile; fileRef = 051A86841DA8FBC30024E8BF /* CDynamoTable.mm */; };
+		051A86991DA8FBC30024E8BF /* DynamoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051A86861DA8FBC30024E8BF /* DynamoItemViewController.swift */; };
+		051A869A1DA8FBC30024E8BF /* DynamoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051A86871DA8FBC30024E8BF /* DynamoListViewController.swift */; };
+		051A869B1DA8FBC30024E8BF /* DynamoItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051A86881DA8FBC30024E8BF /* DynamoItemCellView.swift */; };
+		051A869D1DA8FBC30024E8BF /* OutlineTableInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051A868A1DA8FBC30024E8BF /* OutlineTableInfo.swift */; };
+		051A869E1DA8FBC30024E8BF /* OutlineTableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051A868B1DA8FBC30024E8BF /* OutlineTableList.swift */; };
+		051A869F1DA8FBC30024E8BF /* CredentialsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051A868D1DA8FBC30024E8BF /* CredentialsModel.swift */; };
+		051A86A01DA8FBC30024E8BF /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051A868E1DA8FBC30024E8BF /* WindowController.swift */; };
+		052069AE1E505C2600A26D7C /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 052069AD1E505C2600A26D7C /* libcurl.dylib */; };
+		052069B11E505C7000A26D7C /* libaws-cpp-sdk-core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 052069AF1E505C3700A26D7C /* libaws-cpp-sdk-core.a */; };
+		052069B21E505C7000A26D7C /* libaws-cpp-sdk-dynamodb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 052069B01E505C3700A26D7C /* libaws-cpp-sdk-dynamodb.a */; };
+		053282951DB3738600D9E11A /* DynamoCondNameCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053282941DB3738600D9E11A /* DynamoCondNameCellView.swift */; };
+		053282971DB375B000D9E11A /* DynamoCondTypeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053282961DB375B000D9E11A /* DynamoCondTypeCellView.swift */; };
+		054A5A801DB382D400B3EA10 /* DynamoCondOperatorCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054A5A7F1DB382D400B3EA10 /* DynamoCondOperatorCellView.swift */; };
+		054A5A821DB385AD00B3EA10 /* DynamoCondValueCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054A5A811DB385AD00B3EA10 /* DynamoCondValueCellView.swift */; };
+		054EA21D1DB855520051FDA7 /* CDynamoScanRequest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 054EA21C1DB855520051FDA7 /* CDynamoScanRequest.mm */; };
+		054EA2201DB8555F0051FDA7 /* CDynamoQueryRequest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 054EA21F1DB8555F0051FDA7 /* CDynamoQueryRequest.mm */; };
+		055387331DBF67C4008A96DB /* CDynamoDeleteItemRequest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 055387321DBF67C4008A96DB /* CDynamoDeleteItemRequest.mm */; };
+		055387361DBF6832008A96DB /* CDynamoUpdateItemRequest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 055387351DBF6832008A96DB /* CDynamoUpdateItemRequest.mm */; };
+		055387391DBF685C008A96DB /* CDynamoPutItemRequest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 055387381DBF685C008A96DB /* CDynamoPutItemRequest.mm */; };
+		0553873C1DBF6923008A96DB /* CDynamoDeleteTableRequest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0553873B1DBF6923008A96DB /* CDynamoDeleteTableRequest.mm */; };
+		0553873F1DBF6B37008A96DB /* CDynamoCreateTableRequest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0553873E1DBF6B37008A96DB /* CDynamoCreateTableRequest.mm */; };
+		057D6C601DAB86F900EEACC0 /* DynamoItemComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D6C5F1DAB86F900EEACC0 /* DynamoItemComparator.swift */; };
+		059551551EB8167900772216 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059551541EB8167900772216 /* App.swift */; };
+		05C956001EA2FD49003E8F71 /* SKJSONResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C955FF1EA2FD49003E8F71 /* SKJSONResult.swift */; };
+		05D61BE11DB38B0100FB259A /* DynamoCondDeleteCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D61BE01DB38B0100FB259A /* DynamoCondDeleteCellView.swift */; };
+		05D678E21DB7329500D74E90 /* DynamoCondManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D678E11DB7329500D74E90 /* DynamoCondManager.swift */; };
+		05E535F71DB21AC600C1017F /* DynamoCondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E535F61DB21AC600C1017F /* DynamoCondViewController.swift */; };
+		05FB4CD81DB75E050058A4AC /* DynamoCondProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB4CD71DB75E050058A4AC /* DynamoCondProtocol.swift */; };
+		E406995E202DAB3C00D54113 /* CDynamoType.mm in Sources */ = {isa = PBXBuildFile; fileRef = E406995D202DAB3C00D54113 /* CDynamoType.mm */; };
+		E47C11191DB2613700D80CC9 /* DynamoCondAttributeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47C11181DB2613700D80CC9 /* DynamoCondAttributeCellView.swift */; };
+		E481A3B31DABEE0600488D48 /* ColumnInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E481A3B21DABEE0600488D48 /* ColumnInfoModel.swift */; };
+		E4CDCBA41DA941C90069B9C4 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CDCBA31DA941C90069B9C4 /* Document.swift */; };
+		E4CDCBA61DA941F20069B9C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CDCBA51DA941F20069B9C4 /* AppDelegate.swift */; };
+		E4DF7C912409BF7E0051D46D /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = E4DF7C902409BF7E0051D46D /* ObjectMapper */; };
+		E4DF7C932409BF7E0051D46D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E4DF7C922409BF7E0051D46D /* Alamofire */; };
+		E4DF7C952409BF7E0051D46D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E4DF7C942409BF7E0051D46D /* Realm */; };
+		E4DF7C972409BF7E0051D46D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E4DF7C962409BF7E0051D46D /* RealmSwift */; };
+		E4DF7C992409BF7E0051D46D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = E4DF7C982409BF7E0051D46D /* SwiftyJSON */; };
+		E4E981E32391E8E1008F440D /* libcurl.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 052069AD1E505C2600A26D7C /* libcurl.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		059B95591F36C7CF000792F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E4E981E32391E8E1008F440D /* libcurl.dylib in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		050126051DBB4F4300C31A13 /* Dynamon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dynamon.entitlements; sourceTree = "<group>"; };
+		051A865D1DA8FB0F0024E8BF /* Dynamon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dynamon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		051A86661DA8FB0F0024E8BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		051A86691DA8FB0F0024E8BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		051A86721DA8FBC30024E8BF /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		051A86731DA8FBC30024E8BF /* CDynamo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamo.h; sourceTree = "<group>"; };
+		051A86741DA8FBC30024E8BF /* CDynamo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamo.mm; sourceTree = "<group>"; };
+		051A86751DA8FBC30024E8BF /* CDynamoClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamoClient.h; sourceTree = "<group>"; };
+		051A86761DA8FBC30024E8BF /* CDynamoClient.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamoClient.mm; sourceTree = "<group>"; };
+		051A86791DA8FBC30024E8BF /* CDynamoGlobalSecondaryIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamoGlobalSecondaryIndex.h; sourceTree = "<group>"; };
+		051A867A1DA8FBC30024E8BF /* CDynamoGlobalSecondaryIndex.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamoGlobalSecondaryIndex.mm; sourceTree = "<group>"; };
+		051A867B1DA8FBC30024E8BF /* CDynamoHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamoHeader.h; sourceTree = "<group>"; };
+		051A867C1DA8FBC30024E8BF /* CDynamoHeader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamoHeader.mm; sourceTree = "<group>"; };
+		051A867D1DA8FBC30024E8BF /* CDynamoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamoItem.h; sourceTree = "<group>"; };
+		051A867E1DA8FBC30024E8BF /* CDynamoItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamoItem.mm; sourceTree = "<group>"; };
+		051A867F1DA8FBC30024E8BF /* CDynamoKeySchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamoKeySchema.h; sourceTree = "<group>"; };
+		051A86801DA8FBC30024E8BF /* CDynamoKeySchema.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamoKeySchema.mm; sourceTree = "<group>"; };
+		051A86811DA8FBC30024E8BF /* CDynamoLocalSecondaryIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamoLocalSecondaryIndex.h; sourceTree = "<group>"; };
+		051A86821DA8FBC30024E8BF /* CDynamoLocalSecondaryIndex.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamoLocalSecondaryIndex.mm; sourceTree = "<group>"; };
+		051A86831DA8FBC30024E8BF /* CDynamoTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamoTable.h; sourceTree = "<group>"; };
+		051A86841DA8FBC30024E8BF /* CDynamoTable.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamoTable.mm; sourceTree = "<group>"; };
+		051A86851DA8FBC30024E8BF /* CDynamoType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamoType.h; sourceTree = "<group>"; };
+		051A86861DA8FBC30024E8BF /* DynamoItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoItemViewController.swift; sourceTree = "<group>"; };
+		051A86871DA8FBC30024E8BF /* DynamoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoListViewController.swift; sourceTree = "<group>"; };
+		051A86881DA8FBC30024E8BF /* DynamoItemCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoItemCellView.swift; sourceTree = "<group>"; };
+		051A868A1DA8FBC30024E8BF /* OutlineTableInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlineTableInfo.swift; sourceTree = "<group>"; };
+		051A868B1DA8FBC30024E8BF /* OutlineTableList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlineTableList.swift; sourceTree = "<group>"; };
+		051A868C1DA8FBC30024E8BF /* Dynamon-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Dynamon-Bridging-Header.h"; sourceTree = "<group>"; };
+		051A868D1DA8FBC30024E8BF /* CredentialsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsModel.swift; sourceTree = "<group>"; };
+		051A868E1DA8FBC30024E8BF /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		052069AD1E505C2600A26D7C /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = ../../../../../../../usr/lib/libcurl.dylib; sourceTree = "<group>"; };
+		052069AF1E505C3700A26D7C /* libaws-cpp-sdk-core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libaws-cpp-sdk-core.a"; path = "/usr/local/lib/libaws-cpp-sdk-core.a"; sourceTree = "<absolute>"; };
+		052069B01E505C3700A26D7C /* libaws-cpp-sdk-dynamodb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libaws-cpp-sdk-dynamodb.a"; path = "/usr/local/lib/libaws-cpp-sdk-dynamodb.a"; sourceTree = "<absolute>"; };
+		053282941DB3738600D9E11A /* DynamoCondNameCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoCondNameCellView.swift; sourceTree = "<group>"; };
+		053282961DB375B000D9E11A /* DynamoCondTypeCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoCondTypeCellView.swift; sourceTree = "<group>"; };
+		054A5A7F1DB382D400B3EA10 /* DynamoCondOperatorCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoCondOperatorCellView.swift; sourceTree = "<group>"; };
+		054A5A811DB385AD00B3EA10 /* DynamoCondValueCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoCondValueCellView.swift; sourceTree = "<group>"; };
+		054EA21B1DB855520051FDA7 /* CDynamoScanRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamoScanRequest.h; sourceTree = "<group>"; };
+		054EA21C1DB855520051FDA7 /* CDynamoScanRequest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamoScanRequest.mm; sourceTree = "<group>"; };
+		054EA21E1DB8555F0051FDA7 /* CDynamoQueryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamoQueryRequest.h; sourceTree = "<group>"; };
+		054EA21F1DB8555F0051FDA7 /* CDynamoQueryRequest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamoQueryRequest.mm; sourceTree = "<group>"; };
+		055387311DBF67C4008A96DB /* CDynamoDeleteItemRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamoDeleteItemRequest.h; sourceTree = "<group>"; };
+		055387321DBF67C4008A96DB /* CDynamoDeleteItemRequest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamoDeleteItemRequest.mm; sourceTree = "<group>"; };
+		055387341DBF6832008A96DB /* CDynamoUpdateItemRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamoUpdateItemRequest.h; sourceTree = "<group>"; };
+		055387351DBF6832008A96DB /* CDynamoUpdateItemRequest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamoUpdateItemRequest.mm; sourceTree = "<group>"; };
+		055387371DBF685C008A96DB /* CDynamoPutItemRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamoPutItemRequest.h; sourceTree = "<group>"; };
+		055387381DBF685C008A96DB /* CDynamoPutItemRequest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamoPutItemRequest.mm; sourceTree = "<group>"; };
+		0553873A1DBF6923008A96DB /* CDynamoDeleteTableRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamoDeleteTableRequest.h; sourceTree = "<group>"; };
+		0553873B1DBF6923008A96DB /* CDynamoDeleteTableRequest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamoDeleteTableRequest.mm; sourceTree = "<group>"; };
+		0553873D1DBF6B37008A96DB /* CDynamoCreateTableRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDynamoCreateTableRequest.h; sourceTree = "<group>"; };
+		0553873E1DBF6B37008A96DB /* CDynamoCreateTableRequest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamoCreateTableRequest.mm; sourceTree = "<group>"; };
+		057D6C5F1DAB86F900EEACC0 /* DynamoItemComparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoItemComparator.swift; sourceTree = "<group>"; };
+		057EC9211EB82548003F1607 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		059551541EB8167900772216 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		05C955FF1EA2FD49003E8F71 /* SKJSONResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKJSONResult.swift; sourceTree = "<group>"; };
+		05D61BE01DB38B0100FB259A /* DynamoCondDeleteCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoCondDeleteCellView.swift; sourceTree = "<group>"; };
+		05D678E11DB7329500D74E90 /* DynamoCondManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoCondManager.swift; sourceTree = "<group>"; };
+		05E535F61DB21AC600C1017F /* DynamoCondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoCondViewController.swift; sourceTree = "<group>"; };
+		05FB4CD71DB75E050058A4AC /* DynamoCondProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoCondProtocol.swift; sourceTree = "<group>"; };
+		E406995D202DAB3C00D54113 /* CDynamoType.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CDynamoType.mm; sourceTree = "<group>"; };
+		E47C11181DB2613700D80CC9 /* DynamoCondAttributeCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoCondAttributeCellView.swift; sourceTree = "<group>"; };
+		E481A3B21DABEE0600488D48 /* ColumnInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnInfoModel.swift; sourceTree = "<group>"; };
+		E4CDCBA31DA941C90069B9C4 /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		E4CDCBA51DA941F20069B9C4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		051A865A1DA8FB0F0024E8BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DF7C952409BF7E0051D46D /* Realm in Frameworks */,
+				E4DF7C932409BF7E0051D46D /* Alamofire in Frameworks */,
+				E4DF7C992409BF7E0051D46D /* SwiftyJSON in Frameworks */,
+				E4DF7C972409BF7E0051D46D /* RealmSwift in Frameworks */,
+				E4DF7C912409BF7E0051D46D /* ObjectMapper in Frameworks */,
+				052069AE1E505C2600A26D7C /* libcurl.dylib in Frameworks */,
+				052069B11E505C7000A26D7C /* libaws-cpp-sdk-core.a in Frameworks */,
+				052069B21E505C7000A26D7C /* libaws-cpp-sdk-dynamodb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0509CB701DB5BFA000A8A694 /* TableList */ = {
+			isa = PBXGroup;
+			children = (
+				051A86B41DA8FDED0024E8BF /* OutlineType */,
+				051A86871DA8FBC30024E8BF /* DynamoListViewController.swift */,
+			);
+			name = TableList;
+			sourceTree = "<group>";
+		};
+		0509CB791DB5C02A00A8A694 /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				051A86881DA8FBC30024E8BF /* DynamoItemCellView.swift */,
+			);
+			name = CellView;
+			sourceTree = "<group>";
+		};
+		05177F941DC437BE0071EE96 /* Request-NotReady */ = {
+			isa = PBXGroup;
+			children = (
+				0553873D1DBF6B37008A96DB /* CDynamoCreateTableRequest.h */,
+				0553873E1DBF6B37008A96DB /* CDynamoCreateTableRequest.mm */,
+				0553873A1DBF6923008A96DB /* CDynamoDeleteTableRequest.h */,
+				0553873B1DBF6923008A96DB /* CDynamoDeleteTableRequest.mm */,
+				055387311DBF67C4008A96DB /* CDynamoDeleteItemRequest.h */,
+				055387321DBF67C4008A96DB /* CDynamoDeleteItemRequest.mm */,
+				055387341DBF6832008A96DB /* CDynamoUpdateItemRequest.h */,
+				055387351DBF6832008A96DB /* CDynamoUpdateItemRequest.mm */,
+				055387371DBF685C008A96DB /* CDynamoPutItemRequest.h */,
+				055387381DBF685C008A96DB /* CDynamoPutItemRequest.mm */,
+			);
+			name = "Request-NotReady";
+			sourceTree = "<group>";
+		};
+		051A86541DA8FB0F0024E8BF = {
+			isa = PBXGroup;
+			children = (
+				051A865F1DA8FB0F0024E8BF /* Dynamon */,
+				051A865E1DA8FB0F0024E8BF /* Products */,
+				051A86A21DA8FC3E0024E8BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		051A865E1DA8FB0F0024E8BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				051A865D1DA8FB0F0024E8BF /* Dynamon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		051A865F1DA8FB0F0024E8BF /* Dynamon */ = {
+			isa = PBXGroup;
+			children = (
+				050126051DBB4F4300C31A13 /* Dynamon.entitlements */,
+				051A868C1DA8FBC30024E8BF /* Dynamon-Bridging-Header.h */,
+				051A86A11DA8FBD00024E8BF /* CDynamo */,
+				E4CDCB9F1DA940F10069B9C4 /* Model */,
+				E4CDCBA51DA941F20069B9C4 /* AppDelegate.swift */,
+				E4CDCBA31DA941C90069B9C4 /* Document.swift */,
+				051A868E1DA8FBC30024E8BF /* WindowController.swift */,
+				059551541EB8167900772216 /* App.swift */,
+				051A86681DA8FB0F0024E8BF /* Main.storyboard */,
+				051A86721DA8FBC30024E8BF /* AuthViewController.swift */,
+				05E193F41DCC56FE007FEBBD /* Content */,
+				051A86661DA8FB0F0024E8BF /* Assets.xcassets */,
+				057EC9211EB82548003F1607 /* Info.plist */,
+			);
+			path = Dynamon;
+			sourceTree = "<group>";
+		};
+		051A86A11DA8FBD00024E8BF /* CDynamo */ = {
+			isa = PBXGroup;
+			children = (
+				051A86851DA8FBC30024E8BF /* CDynamoType.h */,
+				E406995D202DAB3C00D54113 /* CDynamoType.mm */,
+				05E535FA1DB2293A00C1017F /* Key */,
+				05E535FC1DB2294C00C1017F /* Item */,
+				05177F941DC437BE0071EE96 /* Request-NotReady */,
+				054EA2211DB855620051FDA7 /* Request */,
+				051A86751DA8FBC30024E8BF /* CDynamoClient.h */,
+				051A86761DA8FBC30024E8BF /* CDynamoClient.mm */,
+				051A86731DA8FBC30024E8BF /* CDynamo.h */,
+				051A86741DA8FBC30024E8BF /* CDynamo.mm */,
+			);
+			name = CDynamo;
+			sourceTree = "<group>";
+		};
+		051A86A21DA8FC3E0024E8BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				052069AD1E505C2600A26D7C /* libcurl.dylib */,
+				052069AF1E505C3700A26D7C /* libaws-cpp-sdk-core.a */,
+				052069B01E505C3700A26D7C /* libaws-cpp-sdk-dynamodb.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		051A86B21DA8FDD10024E8BF /* Left */ = {
+			isa = PBXGroup;
+			children = (
+				0509CB701DB5BFA000A8A694 /* TableList */,
+			);
+			name = Left;
+			sourceTree = "<group>";
+		};
+		051A86B31DA8FDD90024E8BF /* Right */ = {
+			isa = PBXGroup;
+			children = (
+				05E535F81DB2253D00C1017F /* MultiCondition */,
+				05BBB1091DB20D6300DED105 /* DataList */,
+			);
+			name = Right;
+			sourceTree = "<group>";
+		};
+		051A86B41DA8FDED0024E8BF /* OutlineType */ = {
+			isa = PBXGroup;
+			children = (
+				051A868B1DA8FBC30024E8BF /* OutlineTableList.swift */,
+				051A868A1DA8FBC30024E8BF /* OutlineTableInfo.swift */,
+			);
+			name = OutlineType;
+			sourceTree = "<group>";
+		};
+		053282981DB375B900D9E11A /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				05FB4CD71DB75E050058A4AC /* DynamoCondProtocol.swift */,
+				E47C11181DB2613700D80CC9 /* DynamoCondAttributeCellView.swift */,
+				053282941DB3738600D9E11A /* DynamoCondNameCellView.swift */,
+				053282961DB375B000D9E11A /* DynamoCondTypeCellView.swift */,
+				054A5A7F1DB382D400B3EA10 /* DynamoCondOperatorCellView.swift */,
+				054A5A811DB385AD00B3EA10 /* DynamoCondValueCellView.swift */,
+				05D61BE01DB38B0100FB259A /* DynamoCondDeleteCellView.swift */,
+			);
+			name = CellView;
+			sourceTree = "<group>";
+		};
+		054EA2211DB855620051FDA7 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				054EA21B1DB855520051FDA7 /* CDynamoScanRequest.h */,
+				054EA21C1DB855520051FDA7 /* CDynamoScanRequest.mm */,
+				054EA21E1DB8555F0051FDA7 /* CDynamoQueryRequest.h */,
+				054EA21F1DB8555F0051FDA7 /* CDynamoQueryRequest.mm */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		05BBB1091DB20D6300DED105 /* DataList */ = {
+			isa = PBXGroup;
+			children = (
+				0509CB791DB5C02A00A8A694 /* CellView */,
+				057D6C5F1DAB86F900EEACC0 /* DynamoItemComparator.swift */,
+				051A86861DA8FBC30024E8BF /* DynamoItemViewController.swift */,
+			);
+			name = DataList;
+			sourceTree = "<group>";
+		};
+		05E193F41DCC56FE007FEBBD /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				051A86B21DA8FDD10024E8BF /* Left */,
+				051A86B31DA8FDD90024E8BF /* Right */,
+			);
+			name = Content;
+			sourceTree = "<group>";
+		};
+		05E535F81DB2253D00C1017F /* MultiCondition */ = {
+			isa = PBXGroup;
+			children = (
+				053282981DB375B900D9E11A /* CellView */,
+				05D678E11DB7329500D74E90 /* DynamoCondManager.swift */,
+				05E535F61DB21AC600C1017F /* DynamoCondViewController.swift */,
+			);
+			name = MultiCondition;
+			sourceTree = "<group>";
+		};
+		05E535FA1DB2293A00C1017F /* Key */ = {
+			isa = PBXGroup;
+			children = (
+				051A867F1DA8FBC30024E8BF /* CDynamoKeySchema.h */,
+				051A86801DA8FBC30024E8BF /* CDynamoKeySchema.mm */,
+				051A86811DA8FBC30024E8BF /* CDynamoLocalSecondaryIndex.h */,
+				051A86821DA8FBC30024E8BF /* CDynamoLocalSecondaryIndex.mm */,
+				051A86791DA8FBC30024E8BF /* CDynamoGlobalSecondaryIndex.h */,
+				051A867A1DA8FBC30024E8BF /* CDynamoGlobalSecondaryIndex.mm */,
+			);
+			name = Key;
+			sourceTree = "<group>";
+		};
+		05E535FC1DB2294C00C1017F /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				051A867B1DA8FBC30024E8BF /* CDynamoHeader.h */,
+				051A867C1DA8FBC30024E8BF /* CDynamoHeader.mm */,
+				051A867D1DA8FBC30024E8BF /* CDynamoItem.h */,
+				051A867E1DA8FBC30024E8BF /* CDynamoItem.mm */,
+				051A86831DA8FBC30024E8BF /* CDynamoTable.h */,
+				051A86841DA8FBC30024E8BF /* CDynamoTable.mm */,
+			);
+			name = Item;
+			sourceTree = "<group>";
+		};
+		E4CDCB9F1DA940F10069B9C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				051A868D1DA8FBC30024E8BF /* CredentialsModel.swift */,
+				E481A3B21DABEE0600488D48 /* ColumnInfoModel.swift */,
+				05C955FF1EA2FD49003E8F71 /* SKJSONResult.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		051A865C1DA8FB0F0024E8BF /* Dynamon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 051A866E1DA8FB0F0024E8BF /* Build configuration list for PBXNativeTarget "Dynamon" */;
+			buildPhases = (
+				051A86591DA8FB0F0024E8BF /* Sources */,
+				051A865A1DA8FB0F0024E8BF /* Frameworks */,
+				051A865B1DA8FB0F0024E8BF /* Resources */,
+				059B95591F36C7CF000792F0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dynamon;
+			packageProductDependencies = (
+				E4DF7C902409BF7E0051D46D /* ObjectMapper */,
+				E4DF7C922409BF7E0051D46D /* Alamofire */,
+				E4DF7C942409BF7E0051D46D /* Realm */,
+				E4DF7C962409BF7E0051D46D /* RealmSwift */,
+				E4DF7C982409BF7E0051D46D /* SwiftyJSON */,
+			);
+			productName = Dynamon;
+			productReference = 051A865D1DA8FB0F0024E8BF /* Dynamon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		051A86551DA8FB0F0024E8BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Touch Duck";
+				TargetAttributes = {
+					051A865C1DA8FB0F0024E8BF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LR2SCJ6579;
+						LastSwiftMigration = 1120;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 051A86581DA8FB0F0024E8BF /* Build configuration list for PBXProject "Dynamon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 051A86541DA8FB0F0024E8BF;
+			packageReferences = (
+				E4E981D52391E6BA008F440D /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				E4E981D82391E705008F440D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E4E981DB2391E820008F440D /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				E4E981E02391E846008F440D /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = 051A865E1DA8FB0F0024E8BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				051A865C1DA8FB0F0024E8BF /* Dynamon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		051A865B1DA8FB0F0024E8BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051A86671DA8FB0F0024E8BF /* Assets.xcassets in Resources */,
+				051A866A1DA8FB0F0024E8BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		051A86591DA8FB0F0024E8BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				053282971DB375B000D9E11A /* DynamoCondTypeCellView.swift in Sources */,
+				051A869F1DA8FBC30024E8BF /* CredentialsModel.swift in Sources */,
+				054EA21D1DB855520051FDA7 /* CDynamoScanRequest.mm in Sources */,
+				051A86A01DA8FBC30024E8BF /* WindowController.swift in Sources */,
+				051A869A1DA8FBC30024E8BF /* DynamoListViewController.swift in Sources */,
+				054A5A801DB382D400B3EA10 /* DynamoCondOperatorCellView.swift in Sources */,
+				E406995E202DAB3C00D54113 /* CDynamoType.mm in Sources */,
+				051A86911DA8FBC30024E8BF /* CDynamoClient.mm in Sources */,
+				054EA2201DB8555F0051FDA7 /* CDynamoQueryRequest.mm in Sources */,
+				0553873C1DBF6923008A96DB /* CDynamoDeleteTableRequest.mm in Sources */,
+				E4CDCBA41DA941C90069B9C4 /* Document.swift in Sources */,
+				051A869D1DA8FBC30024E8BF /* OutlineTableInfo.swift in Sources */,
+				059551551EB8167900772216 /* App.swift in Sources */,
+				053282951DB3738600D9E11A /* DynamoCondNameCellView.swift in Sources */,
+				051A869B1DA8FBC30024E8BF /* DynamoItemCellView.swift in Sources */,
+				051A86961DA8FBC30024E8BF /* CDynamoKeySchema.mm in Sources */,
+				051A86971DA8FBC30024E8BF /* CDynamoLocalSecondaryIndex.mm in Sources */,
+				051A86931DA8FBC30024E8BF /* CDynamoGlobalSecondaryIndex.mm in Sources */,
+				055387361DBF6832008A96DB /* CDynamoUpdateItemRequest.mm in Sources */,
+				051A86991DA8FBC30024E8BF /* DynamoItemViewController.swift in Sources */,
+				E47C11191DB2613700D80CC9 /* DynamoCondAttributeCellView.swift in Sources */,
+				051A86901DA8FBC30024E8BF /* CDynamo.mm in Sources */,
+				051A86951DA8FBC30024E8BF /* CDynamoItem.mm in Sources */,
+				051A869E1DA8FBC30024E8BF /* OutlineTableList.swift in Sources */,
+				05D61BE11DB38B0100FB259A /* DynamoCondDeleteCellView.swift in Sources */,
+				05E535F71DB21AC600C1017F /* DynamoCondViewController.swift in Sources */,
+				051A86941DA8FBC30024E8BF /* CDynamoHeader.mm in Sources */,
+				057D6C601DAB86F900EEACC0 /* DynamoItemComparator.swift in Sources */,
+				054A5A821DB385AD00B3EA10 /* DynamoCondValueCellView.swift in Sources */,
+				051A868F1DA8FBC30024E8BF /* AuthViewController.swift in Sources */,
+				055387331DBF67C4008A96DB /* CDynamoDeleteItemRequest.mm in Sources */,
+				0553873F1DBF6B37008A96DB /* CDynamoCreateTableRequest.mm in Sources */,
+				E481A3B31DABEE0600488D48 /* ColumnInfoModel.swift in Sources */,
+				051A86981DA8FBC30024E8BF /* CDynamoTable.mm in Sources */,
+				05D678E21DB7329500D74E90 /* DynamoCondManager.swift in Sources */,
+				05FB4CD81DB75E050058A4AC /* DynamoCondProtocol.swift in Sources */,
+				05C956001EA2FD49003E8F71 /* SKJSONResult.swift in Sources */,
+				055387391DBF685C008A96DB /* CDynamoPutItemRequest.mm in Sources */,
+				E4CDCBA61DA941F20069B9C4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		051A86681DA8FB0F0024E8BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				051A86691DA8FB0F0024E8BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		051A866C1DA8FB0F0024E8BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"AWS_CUSTOM_MEMORY_MANAGEMENT=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/lib,
+					/usr/local/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		051A866D1DA8FB0F0024E8BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "AWS_CUSTOM_MEMORY_MANAGEMENT=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/lib,
+					/usr/local/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		051A866F1DA8FB0F0024E8BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Dynamon/Dynamon.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LR2SCJ6579;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Dynamon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.0.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdonut.dynamon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dynamon/Dynamon-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		051A86701DA8FB0F0024E8BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Dynamon/Dynamon.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LR2SCJ6579;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Dynamon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.0.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdonut.dynamon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dynamon/Dynamon-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		051A86581DA8FB0F0024E8BF /* Build configuration list for PBXProject "Dynamon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				051A866C1DA8FB0F0024E8BF /* Debug */,
+				051A866D1DA8FB0F0024E8BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		051A866E1DA8FB0F0024E8BF /* Build configuration list for PBXNativeTarget "Dynamon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				051A866F1DA8FB0F0024E8BF /* Debug */,
+				051A86701DA8FB0F0024E8BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E4E981D52391E6BA008F440D /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.5.1;
+			};
+		};
+		E4E981D82391E705008F440D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.1;
+			};
+		};
+		E4E981DB2391E820008F440D /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+		E4E981E02391E846008F440D /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4DF7C902409BF7E0051D46D /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4E981D52391E6BA008F440D /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		E4DF7C922409BF7E0051D46D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4E981D82391E705008F440D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		E4DF7C942409BF7E0051D46D /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4E981DB2391E820008F440D /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		E4DF7C962409BF7E0051D46D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4E981DB2391E820008F440D /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		E4DF7C982409BF7E0051D46D /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4E981E02391E846008F440D /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 051A86551DA8FB0F0024E8BF /* Project object */;
+}

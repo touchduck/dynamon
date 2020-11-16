@@ -56,3 +56,17 @@ Multiple tabs
 When you run it again, Keep width and order of columns
 ![Screenshot](Screenshots/shot9.png)
 
+
+# How to compile
+
+git clone aws-sdk-cpp
+```
+[aws/aws-sdk-cpp: AWS SDK for C++ - GitHub](https://github.com/aws/aws-sdk-cpp.git)
+```
+
+compile macOS static library
+```
+brew install cmake
+cmake -DCUSTOM_MEMORY_MANAGEMENT=1 -DSTATIC_LINKING=1 -DBUILD_ONLY="core;monitoring;s3;dynamodb"
+make install
+```
