@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "git@github.com:Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "becd9a729a37bdbef5bc39dc3c702b99f9e3d046",
+          "version": "5.2.2"
+        }
+      },
+      {
+        "package": "ObjectMapper",
+        "repositoryURL": "git@github.com:tristanhimmelman/ObjectMapper.git",
+        "state": {
+          "branch": null,
+          "revision": "0b96a734de3ea1c87374ae677064f86adb0716ec",
+          "version": "4.2.0"
+        }
+      },
+      {
+        "package": "Realm",
+        "repositoryURL": "git@github.com:realm/realm-cocoa.git",
+        "state": {
+          "branch": null,
+          "revision": "577fd71982d133a50f85384bcd0b21b1ecf069fe",
+          "version": "5.4.6"
+        }
+      },
+      {
+        "package": "RealmCore",
+        "repositoryURL": "https://github.com/realm/realm-core",
+        "state": {
+          "branch": null,
+          "revision": "95b206cef7040174a4663c5bf2250b83dfe74171",
+          "version": "6.1.2"
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "git@github.com:SwiftyJSON/SwiftyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "2b6054efa051565954e1d2b9da831680026cd768",
+          "version": "5.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
