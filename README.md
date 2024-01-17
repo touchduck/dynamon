@@ -68,4 +68,3 @@ brew install cmake
 cmake -DCUSTOM_MEMORY_MANAGEMENT=1 -DSTATIC_LINKING=1 -DBUILD_ONLY="core;s3;dynamodb"
 make install
 and build to xcode
-test
